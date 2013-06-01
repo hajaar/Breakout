@@ -27,6 +27,5 @@ while True:
     window_surface.fill((0, 0, 0))
     for brick in brick_list:
         brick.updatePosition()
-        brick.bounceSelf(brick_list)
         pygame.draw.rect(window_surface, brick.color, brick, brick.line_width)
     pygame.display.update()
